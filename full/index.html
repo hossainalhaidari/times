@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pray Times</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chibijs@3.0.9/chibi-min.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/praytimes@0.0.5/src/praytimes.min.js"
+    ></script>
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+  <body>
+    <div>
+      <input placeholder="Latitude" id="latitude" />
+      <input placeholder="Longitude" id="longitude" />
+      <input placeholder="Date" id="date" />
+      <input placeholder="Timezone" id="timezone" value="auto" />
+      <input type="button" id="submit" value="Calculate" />
+      <input type="button" id="current" value="My Location" />
+      <table>
+        <tbody>
+          <tr>
+            <th colspan="2" id="datelabel">--/--/----</th>
+          </tr>
+          <tr>
+            <td>Fajr</td>
+            <td id="fajr">-----</td>
+          </tr>
+          <tr>
+            <td>Sunrise</td>
+            <td id="sunrise">-----</td>
+          </tr>
+          <tr>
+            <td>Dhuhr</td>
+            <td id="dhuhr">-----</td>
+          </tr>
+          <tr>
+            <td>Sunset</td>
+            <td id="sunset">-----</td>
+          </tr>
+          <tr>
+            <td>Maghrib</td>
+            <td id="maghrib">-----</td>
+          </tr>
+          <tr>
+            <td>Midnight</td>
+            <td id="midnight">-----</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
