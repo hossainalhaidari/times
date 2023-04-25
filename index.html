@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pray Times</title>
+    <title>Times</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css"
+      href="https://unpkg.com/simpledotcss/simple.min.css"
     />
     <script
       type="text/javascript"
@@ -22,7 +22,7 @@
     <table>
       <tbody>
         <tr>
-          <th colspan="2" id="date">--/--/----</th>
+          <th colspan="2" id="datelabel">--/--/----</th>
         </tr>
         <tr>
           <td>Fajr</td>
@@ -50,5 +50,16 @@
         </tr>
       </tbody>
     </table>
+    <div>
+      <input placeholder="Latitude" id="latitude" />
+      <input placeholder="Longitude" id="longitude" />
+      <input type="button" id="current" value="My Location" />
+    </div>
+    <div>
+      <input placeholder="Date" id="date" />
+      <input placeholder="Timezone" id="timezone" value="auto" />
+      <input type="button" id="submit" value="Calculate" />
+    </div>
+    <div></div>
   </body>
 </html>
